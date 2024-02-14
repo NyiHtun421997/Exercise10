@@ -4,9 +4,12 @@ import java.io.InputStream;
 import java.io.PrintStream;
 
 import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.TestInstance;
 
+@TestInstance(TestInstance.Lifecycle.PER_CLASS)
 class Lesson10B2Test {
 
   private final InputStream inputStream = System.in;
@@ -29,6 +32,8 @@ class Lesson10B2Test {
   @Test
   void test() {
     Lesson10B2.main(null);
+    Assertions.assertEquals("入力した文章はあいうえおです。\n"
+    		+ "入力した文章を逆から読むとおえういあ", outputContent.toString().trim());
   }
 
 }

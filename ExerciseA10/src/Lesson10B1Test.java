@@ -53,9 +53,9 @@ class Lesson10B1Test {
   @Test
   void doesMainDisplayProperText() {
     Lesson10B1.main(null);
-    Assertions.assertEquals("四捨五入前：100÷3=33.333333333333336\r\n"
-                + "四捨五入後：100÷3=33\r\n"
-                + "四捨五入前：77÷9=8.555555555555555\r\n"
+    Assertions.assertEquals("四捨五入前：100÷3=33.333333333333336\n"
+                + "四捨五入後：100÷3=33\n"
+                + "四捨五入前：77÷9=8.555555555555555\n"
                 + "四捨五入後：77÷9=9", outputContent.toString().trim());
   }
 }
