@@ -32,8 +32,8 @@ class Lesson10B2Test {
   @Test
   void test() {
     Lesson10B2.main(null);
-    Assertions.assertEquals("入力した文章はあいうえおです。\n"
-    		+ "入力した文章を逆から読むとおえういあ", outputContent.toString().trim());
+    Assertions.assertEquals("入力した文章はあいうえおです。\r\n"
+        + "入力した文章を逆から読むとおえういあ", outputContent.toString().trim());
   }
 
 }
